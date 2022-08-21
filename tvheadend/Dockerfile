@@ -7,7 +7,7 @@ FROM ${BUILD_FROM}
 RUN \
     apk update \
     && apk add --no-cache --virtual .build-deps \
-        tvheadend=4.2.8-r5 \
+        tvheadend \
     && apk del --no-cache --purge .build-deps
 
 # Copy root filesystem
