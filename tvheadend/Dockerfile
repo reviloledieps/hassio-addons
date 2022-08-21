@@ -5,10 +5,8 @@ FROM ${BUILD_FROM}
 #COPY requirements.txt /tmp/
 
 RUN \
-    apk update \
-    && apk add --no-cache --virtual .build-deps \
-        tvheadend \
-    && apk del --no-cache --purge .build-deps
+    apk add --no-cache \
+        tvheadend
 
 # Copy root filesystem
 COPY rootfs /
