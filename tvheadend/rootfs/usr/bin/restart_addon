@@ -6,4 +6,4 @@
 
 echo "Restarting add-on"
 
-bashio::addon.restart 
+bashio::addon.restart
