@@ -5,5 +5,5 @@
 # ==============================================================================
 
 bashio::log.info "Starting TVHeadend..."
-
+ 
 exec /usr/bin/tvheadend -u root -g root -c /config/tvheadend
