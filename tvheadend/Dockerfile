@@ -14,7 +14,7 @@ RUN \
 COPY rootfs /
 
 RUN chmod +x -R /etc/cont-init.d/
-
+RUN chmod +x -R /etc/services.d/
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
