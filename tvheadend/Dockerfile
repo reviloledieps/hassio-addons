@@ -13,6 +13,8 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
+CMD [ "chomd -R +x /etc/cont-init.d/" ]
+
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
